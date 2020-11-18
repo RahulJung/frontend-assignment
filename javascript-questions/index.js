@@ -33,6 +33,9 @@ const getDCHeroes = (heroes) => {
  * ]
  */
 const convertCharactersToArray = (heroes) => {
+  heroes.forEach((item) => {
+    item["characters"] = item["characters"].split(",");
+  });
   return heroes;
 };
 
