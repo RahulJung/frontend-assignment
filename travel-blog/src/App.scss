@@ -128,3 +128,33 @@ $medium-breakpoint: 960px;
     }
   }
 }
+
+@media (max-width: $small-breakpoint) {
+  .profile {
+    & h1 {
+      text-align: center;
+    }
+    &__navBar {
+      display: none;
+    }
+    &__backgroundImg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: $small-breakpoint;
+    }
+    &__wallPaper {
+      width: $small-breakpoint;
+    }
+    &__aboutContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__aboutMe {
+      width: $small-breakpoint;
+      padding: 1em;
+    }
+  }
+}
