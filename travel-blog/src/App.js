@@ -17,7 +17,7 @@ function App() {
             <img className="profile__headShot" src={headshot} />
           </div>
           <div className="profile__aboutMe">
-            <h2>A little about me</h2>
+            <h1>A little about me</h1>
             <LoremIpsum p={5} />
           </div>
         </div>

@@ -32,7 +32,7 @@ $medium-breakpoint: 960px;
   }
   &__navBar a {
     text-decoration: none;
-    color: black;
+    color: $gray;
   }
   &__logoContainer {
     display: flex;
@@ -40,7 +40,7 @@ $medium-breakpoint: 960px;
     padding-bottom: $gutter;
   }
   &__logo {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 400;
   }
   &__miniLogo {
@@ -66,7 +66,6 @@ $medium-breakpoint: 960px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 100px;
   }
   &__wallPaper {
     width: $hero-width;
@@ -77,8 +76,6 @@ $medium-breakpoint: 960px;
     align-items: flex-start;
   }
   &__profileImage {
-    // padding-right: $gutter * 4;
-    // padding-top: 1em;
     padding: 1em;
   }
   &__headShot {
@@ -99,5 +96,35 @@ $medium-breakpoint: 960px;
     color: white;
     width: 100%;
     height: $gutter * 4;
+  }
+}
+
+@media (max-width: $medium-breakpoint) {
+  .profile {
+    & h1 {
+      text-align: center;
+    }
+    &__navBar {
+      display: none;
+    }
+    &__backgroundImg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: $medium-breakpoint;
+    }
+    &__wallPaper {
+      width: $medium-breakpoint;
+    }
+    &__aboutContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__aboutMe {
+      width: $medium-breakpoint;
+      padding: 1em;
+    }
   }
 }
