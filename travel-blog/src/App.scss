@@ -28,6 +28,7 @@ $medium-breakpoint: 960px;
     flex-direction: row;
     justify-content: space-around;
     background-color: $primary-light;
+    width: 100%;
   }
   &__navBar a {
     text-decoration: none;
@@ -52,7 +53,15 @@ $medium-breakpoint: 960px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 15%;
+  }
+  &__item {
+    padding: $gutter;
+    margin-right: 0.5em;
+    border-radius: 0.3em;
+    &:hover {
+      background: $primary;
+      color: white;
+    }
   }
   &__backgroundImg {
     display: flex;
@@ -82,8 +91,10 @@ $medium-breakpoint: 960px;
   &__fotter {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     background-color: $primary;
     color: white;
     width: 100%;
+    height: $gutter * 4;
   }
 }

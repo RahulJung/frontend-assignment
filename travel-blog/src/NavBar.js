@@ -9,13 +9,19 @@ const NavBar = () => {
       </div>
       <ul className="profile__links">
         <li>
-          <a href="#">Home</a>
+          <a className="profile__item " href="#">
+            Home
+          </a>
         </li>
         <li>
-          <a href="#">Blog</a>
+          <a className="profile__item " href="#">
+            Blog
+          </a>
         </li>
         <li>
-          <a href="#">About</a>
+          <a className="profile__item " href="#">
+            About
+          </a>
         </li>
       </ul>
     </div>
