@@ -2,11 +2,13 @@ import { LoremIpsum } from "react-lorem-ipsum";
 import headshot from "./images/headshot.jpg";
 import heroBackground from "./images/hero-background.jpg";
 import "./App.scss";
+import NavBar from "./NavBar";
 
 function App() {
   return (
     <div className="app">
       <div className="profile">
+        <NavBar />
         <div className="profile__backgroundImg">
           <img className="profile__wallPaper" src={heroBackground} />
         </div>
