@@ -54,4 +54,36 @@ $medium-breakpoint: 960px;
     justify-content: space-around;
     width: 15%;
   }
+  &__backgroundImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__wallPaper {
+    width: $hero-width;
+  }
+  &__aboutContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__profileImage {
+    padding-right: $gutter * 4;
+  }
+  &__headShot {
+    width: $profile-image-width;
+    clip-path: circle();
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  &__aboutMe {
+    width: $medium-breakpoint;
+  }
+  &__fotter {
+    display: flex;
+    justify-content: space-around;
+    background-color: $primary;
+    color: white;
+    width: 100%;
+  }
 }
