@@ -70,7 +70,13 @@ const groupByPublisher = (heroes) => {
  * ]
  */
 const getDCHeroesWithMoreThanOneCharacter = (heroes) => {
-  return heroes;
+  let hero = [];
+  heroes.forEach((item) => {
+    if (item.publisher === "DC Comics" && item.characters.length > 1) {
+      hero.push(item.superhero);
+    }
+  });
+  return hero;
 };
 
 module.exports = {
