@@ -38,7 +38,6 @@ $medium-breakpoint: 960px;
     display: flex;
     flex-direction: column;
     padding-bottom: $gutter;
-    align-items: left;
   }
   &__logo {
     font-size: 25px;
@@ -67,6 +66,7 @@ $medium-breakpoint: 960px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 100px;
   }
   &__wallPaper {
     width: $hero-width;
@@ -74,10 +74,12 @@ $medium-breakpoint: 960px;
   &__aboutContainer {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
   &__profileImage {
-    padding-right: $gutter * 4;
+    // padding-right: $gutter * 4;
+    // padding-top: 1em;
+    padding: 1em;
   }
   &__headShot {
     width: $profile-image-width;
@@ -87,6 +89,7 @@ $medium-breakpoint: 960px;
   }
   &__aboutMe {
     width: $medium-breakpoint;
+    padding: 1em;
   }
   &__fotter {
     display: flex;
