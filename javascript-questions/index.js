@@ -53,7 +53,18 @@ const convertCharactersToArray = (heroes) => {
  * }
  */
 const groupByPublisher = (heroes) => {
-  return heroes;
+  let heroData = {
+    "DC Comics": [],
+    "Marvel Comics": [],
+  };
+  heroes.forEach((item) => {
+    if (item.publisher === "DC Comics") {
+      heroData["DC Comics"].push(item);
+    } else {
+      heroData["Marvel Comics"].push(item);
+    }
+  });
+  return heroData;
 };
 
 /**
